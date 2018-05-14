@@ -14,4 +14,4 @@ Include holidays for more countries
 Fix styles so that all days are the same size (some cells may end up narrower than others)
 
 
-#Time from start to finish: Approximately 8.5 hours
+# Time from start to finish: Approximately 8.5 hours
