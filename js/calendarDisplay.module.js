@@ -7,6 +7,12 @@ $(function() {
             APP.Modules.CalendarDisplay = (function() {
 
                     var calendar = [];
+                    
+                    function calculateTotalMonths(start, end) {
+
+                        return Math.round(moment(end).diff(moment(start), 'months', true));
+
+                    }
 
                     //calculate the number of days in each month
                     function getDaysInMonthArray(userInputResults, monthNumber, trimStart, trimEnd) {
@@ -128,17 +134,23 @@ $(function() {
                             calendar = [];
 
                             var startMonth = moment(userInputResults.startDate).startOf('month').month();
-                            var endMonth = moment(userInputResults.endDate).endOf('month').month();
                             var startYear = moment(userInputResults.startDate).year();
-                            var endYear = moment(userInputResults.endDate).year();
 
-                            for (var month = startMonth; month <= endMonth; month++) {
+                            var monthCounter = startMonth;
+
+                            for (var month = startMonth; month <= startMonth + calculateTotalMonths(userInputResults.startDate, userInputResults.endDate); month++) {
+
+                                if (monthCounter >= 12) {
+                                  monthCounter = 0;
+                                }
 
                                 calendar.push({
-                                    name: moment().month(month).format('MMMM'),
-                                    monthNumber: month,
+                                    name: moment().month(month).format('MMMM YYYY'),
+                                    monthNumber: monthCounter,
                                     year: startYear
                                 });
+
+                              monthCounter++;
 
                             }
 
@@ -151,8 +163,6 @@ $(function() {
                                                     monthIndex === calendar.length - 1 ? true : false 
                                                 );
 
-                                console.log(daysInMonth);
-                                
                                 calendar[monthIndex].weeks = Array(6);
 
                                 for (var i = 0; i < 6; i++) {
