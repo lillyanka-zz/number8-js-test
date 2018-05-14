@@ -1,0 +1,608 @@
+{
+  "US": {
+    "01-01": [
+      {
+        "name": "Last Day of Kwanzaa",
+        "date": "01-01",
+        "observed": "01-01",
+        "public": false
+      },
+      {
+        "name": "New Year's Day",
+        "date": "01-01",
+        "observed": "01-02",
+        "public": true
+      }
+    ],
+    "01-06": [
+      {
+        "name": "Epiphany",
+        "date": "01-06",
+        "observed": "01-06",
+        "public": false
+      }
+    ],
+    "01-07": [
+      {
+        "name": "Orthodox Christmas",
+        "date": "01-07",
+        "observed": "01-07",
+        "public": false
+      }
+    ],
+    "01-16": [
+      {
+        "name": "Martin Luther King, Jr. Day",
+        "date": "01-16",
+        "observed": "01-16",
+        "public": true
+      }
+    ],
+    "02-02": [
+      {
+        "name": "Groundhog Day",
+        "date": "02-02",
+        "observed": "02-02",
+        "public": false
+      }
+    ],
+    "02-14": [
+      {
+        "name": "Valentine's Day",
+        "date": "02-14",
+        "observed": "02-14",
+        "public": false
+      }
+    ],
+    "02-20": [
+      {
+        "name": "George Washington's Birthday",
+        "date": "02-20",
+        "observed": "02-20",
+        "public": true
+      }
+    ],
+    "03-01": [
+      {
+        "name": "Ash Wednesday",
+        "date": "03-01",
+        "observed": "03-01",
+        "public": false
+      }
+    ],
+    "03-17": [
+      {
+        "name": "St. Patrick's Day",
+        "date": "03-17",
+        "observed": "03-17",
+        "public": false
+      }
+    ],
+    "04-01": [
+      {
+        "name": "April Fools' Day",
+        "date": "04-01",
+        "observed": "04-01",
+        "public": false
+      }
+    ],
+    "04-09": [
+      {
+        "name": "Palm Sunday",
+        "date": "04-09",
+        "observed": "04-09",
+        "public": false
+      }
+    ],
+    "04-14": [
+      {
+        "name": "Good Friday",
+        "date": "04-14",
+        "observed": "04-14",
+        "public": false
+      }
+    ],
+    "04-16": [
+      {
+        "name": "Easter",
+        "date": "04-16",
+        "observed": "04-16",
+        "public": false
+      }
+    ],
+    "04-22": [
+      {
+        "name": "Earth Day",
+        "date": "04-22",
+        "observed": "04-22",
+        "public": false
+      }
+    ],
+    "04-28": [
+      {
+        "name": "National Arbor Day",
+        "date": "04-28",
+        "observed": "04-28",
+        "public": false
+      }
+    ],
+    "05-01": [
+      {
+        "name": "May Day",
+        "date": "05-01",
+        "observed": "05-01",
+        "public": false
+      }
+    ],
+    "05-04": [
+      {
+        "name": "Star Wars Day",
+        "date": "05-04",
+        "observed": "05-04",
+        "public": false
+      }
+    ],
+    "05-05": [
+      {
+        "name": "Cinco de Mayo",
+        "date": "05-05",
+        "observed": "05-05",
+        "public": false
+      }
+    ],
+    "05-14": [
+      {
+        "name": "Mother's Day",
+        "date": "05-14",
+        "observed": "05-14",
+        "public": false
+      }
+    ],
+    "05-29": [
+      {
+        "name": "Memorial Day",
+        "date": "05-29",
+        "observed": "05-29",
+        "public": true
+      }
+    ],
+    "06-14": [
+      {
+        "name": "Flag Day",
+        "date": "06-14",
+        "observed": "06-14",
+        "public": false
+      }
+    ],
+    "06-18": [
+      {
+        "name": "Father's Day",
+        "date": "06-18",
+        "observed": "06-18",
+        "public": false
+      }
+    ],
+    "06-27": [
+      {
+        "name": "Helen Keller Day",
+        "date": "06-27",
+        "observed": "06-27",
+        "public": false
+      }
+    ],
+    "07-04": [
+      {
+        "name": "Independence Day",
+        "date": "07-04",
+        "observed": "07-04",
+        "public": true
+      }
+    ],
+    "08-26": [
+      {
+        "name": "Women's Equality Day",
+        "date": "08-26",
+        "observed": "08-26",
+        "public": false
+      }
+    ],
+    "09-04": [
+      {
+        "name": "Labor Day",
+        "date": "09-04",
+        "observed": "09-04",
+        "public": true
+      }
+    ],
+    "09-10": [
+      {
+        "name": "National Grandparent's Day",
+        "date": "09-10",
+        "observed": "09-10",
+        "public": false
+      }
+    ],
+    "09-11": [
+      {
+        "name": "Patriot Day",
+        "date": "09-11",
+        "observed": "09-11",
+        "public": false
+      }
+    ],
+    "09-17": [
+      {
+        "name": "Citizenship Day",
+        "date": "09-17",
+        "observed": "09-18",
+        "public": false
+      }
+    ],
+    "10-06": [
+      {
+        "name": "German-American Day",
+        "date": "10-06",
+        "observed": "10-06",
+        "public": false
+      }
+    ],
+    "10-09": [
+      {
+        "name": "Columbus Day",
+        "date": "10-09",
+        "observed": "10-09",
+        "public": true
+      },
+      {
+        "name": "Leif Erikson Day",
+        "date": "10-09",
+        "observed": "10-09",
+        "public": false
+      }
+    ],
+    "10-31": [
+      {
+        "name": "Halloween",
+        "date": "10-31",
+        "observed": "10-31",
+        "public": false
+      }
+    ],
+    "11-07": [
+      {
+        "name": "Election Day",
+        "date": "11-07",
+        "observed": "11-07",
+        "public": false
+      }
+    ],
+    "11-11": [
+      {
+        "name": "Veterans Day",
+        "date": "11-11",
+        "observed": "11-10",
+        "public": true
+      }
+    ],
+    "11-23": [
+      {
+        "name": "Thanksgiving Day",
+        "date": "11-23",
+        "observed": "11-23",
+        "public": true
+      }
+    ],
+    "11-24": [
+      {
+        "name": "Black Friday",
+        "date": "11-24",
+        "observed": "11-24",
+        "public": false
+      }
+    ],
+    "12-07": [
+      {
+        "name": "Pearl Harbor Remembrance Day",
+        "date": "12-07",
+        "observed": "12-07",
+        "public": false
+      }
+    ],
+    "12-08": [
+      {
+        "name": "Immaculate Conception of the Virgin Mary",
+        "date": "12-08",
+        "observed": "12-08",
+        "public": false
+      }
+    ],
+    "12-12": [
+      {
+        "name": "Hanukkah",
+        "date": "12-12",
+        "observed": "12-12",
+        "public": false
+      }
+    ],
+    "12-13": [
+      {
+        "name": "Hanukkah",
+        "date": "12-13",
+        "observed": "12-13",
+        "public": false
+      }
+    ],
+    "12-14": [
+      {
+        "name": "Hanukkah",
+        "date": "12-14",
+        "observed": "12-14",
+        "public": false
+      }
+    ],
+    "12-15": [
+      {
+        "name": "Hanukkah",
+        "date": "12-15",
+        "observed": "12-15",
+        "public": false
+      }
+    ],
+    "12-16": [
+      {
+        "name": "Hanukkah",
+        "date": "12-16",
+        "observed": "12-16",
+        "public": false
+      }
+    ],
+    "12-17": [
+      {
+        "name": "Hanukkah",
+        "date": "12-17",
+        "observed": "12-17",
+        "public": false
+      }
+    ],
+    "12-18": [
+      {
+        "name": "Hanukkah",
+        "date": "12-18",
+        "observed": "12-18",
+        "public": false
+      }
+    ],
+    "12-19": [
+      {
+        "name": "Hanukkah",
+        "date": "12-19",
+        "observed": "12-19",
+        "public": false
+      }
+    ],
+    "12-24": [
+      {
+        "name": "Christmas Eve",
+        "date": "12-24",
+        "observed": "12-24",
+        "public": false
+      }
+    ],
+    "12-25": [
+      {
+        "name": "Christmas Day",
+        "date": "12-25",
+        "observed": "12-25",
+        "public": true
+      }
+    ],
+    "12-26": [
+      {
+        "name": "First Day of Kwanzaa",
+        "date": "12-26",
+        "observed": "12-26",
+        "public": false
+      }
+    ],
+    "12-27": [
+      {
+        "name": "Second Day of Kwanzaa",
+        "date": "12-27",
+        "observed": "12-27",
+        "public": false
+      }
+    ],
+    "12-28": [
+      {
+        "name": "Third Day of Kwanzaa",
+        "date": "12-28",
+        "observed": "12-28",
+        "public": false
+      }
+    ],
+    "12-29": [
+      {
+        "name": "Fourth Day of Kwanzaa",
+        "date": "12-29",
+        "observed": "12-29",
+        "public": false
+      }
+    ],
+    "12-30": [
+      {
+        "name": "Fifth Day of Kwanzaa",
+        "date": "12-30",
+        "observed": "12-30",
+        "public": false
+      }
+    ],
+    "12-31": [
+      {
+        "name": "New Year's Eve",
+        "date": "12-31",
+        "observed": "12-31",
+        "public": true
+      },
+      {
+        "name": "Sixth Day of Kwanzaa",
+        "date": "12-31",
+        "observed": "12-31",
+        "public": false
+      }
+    ]
+  },
+  "CR": {
+    "01-01": [
+      {
+        "name": "New Year's Day",
+        "date": "01-01",
+        "observed": "01-01",
+        "public": true
+      }
+    ],
+    "03-19": [
+      {
+        "name": "Saint Joseph's Day",
+        "date": "03-19",
+        "observed": "03-19",
+        "public": false
+      }
+    ],
+    "04-11": [
+      {
+        "name": "Battle of Rivas",
+        "date": "04-11",
+        "observed": "04-11",
+        "public": true
+      }
+    ],
+    "04-13": [
+      {
+        "name": "Maundy Thursday",
+        "date": "04-13",
+        "observed": "04-13",
+        "public": true
+      }
+    ],
+    "04-14": [
+      {
+        "name": "Good Friday",
+        "date": "04-14",
+        "observed": "04-14",
+        "public": true
+      }
+    ],
+    "05-01": [
+      {
+        "name": "Labor Day \/ May Day",
+        "date": "05-01",
+        "observed": "05-01",
+        "public": true
+      }
+    ],
+    "06-18": [
+      {
+        "name": "Father's Day",
+        "date": "06-18",
+        "observed": "06-18",
+        "public": false
+      }
+    ],
+    "07-25": [
+      {
+        "name": "Annexation of Guanacaste",
+        "date": "07-25",
+        "observed": "07-25",
+        "public": true
+      }
+    ],
+    "08-02": [
+      {
+        "name": "Our Lady of Los Ángeles",
+        "date": "08-02",
+        "observed": "08-02",
+        "public": false
+      }
+    ],
+    "08-15": [
+      {
+        "name": "Mother's Day",
+        "date": "08-15",
+        "observed": "08-15",
+        "public": true
+      }
+    ],
+    "08-24": [
+      {
+        "name": "National Parks' Day",
+        "date": "08-24",
+        "observed": "08-24",
+        "public": false
+      }
+    ],
+    "09-09": [
+      {
+        "name": "Children's Day",
+        "date": "09-09",
+        "observed": "09-09",
+        "public": false
+      }
+    ],
+    "09-15": [
+      {
+        "name": "Independence Day",
+        "date": "09-15",
+        "observed": "09-15",
+        "public": true
+      }
+    ],
+    "10-12": [
+      {
+        "name": "Day of the Cultures",
+        "date": "10-12",
+        "observed": "10-12",
+        "public": false
+      }
+    ],
+    "11-02": [
+      {
+        "name": "All Souls' Day",
+        "date": "11-02",
+        "observed": "11-02",
+        "public": false
+      }
+    ],
+    "11-22": [
+      {
+        "name": "Teacher's Day",
+        "date": "11-22",
+        "observed": "11-22",
+        "public": false
+      }
+    ],
+    "12-08": [
+      {
+        "name": "Feast of the Immaculate Conception",
+        "date": "12-08",
+        "observed": "12-08",
+        "public": false
+      }
+    ],
+    "12-25": [
+      {
+        "name": "Christmas Day",
+        "date": "12-25",
+        "observed": "12-25",
+        "public": true
+      }
+    ],
+    "12-31": [
+      {
+        "name": "New Year's Eve",
+        "date": "12-31",
+        "observed": "12-31",
+        "public": false
+      }
+    ]
+  }
+}

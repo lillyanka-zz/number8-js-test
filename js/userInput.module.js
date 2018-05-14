@@ -13,21 +13,22 @@ $(function() {
                         weeks,
                         countryCode;
 
-                    function calculateEndDate() {
+                    function calculateEndDate(addDays) {
 
-                        return moment(startDate).add(addDays, 'days').format();
+                        return moment(startDate).add(addDays, 'days');
 
                     }
 
                     function calculateMonths() {
 
-                        return moment(endDate).diff(moment(startDate), 'months'); 
+                        var monthsDiff = (moment(endDate).diff(moment(startDate), 'days', true))/30;
+                        return monthsDiff; 
 
                     }
 
                     function calculateWeeks() {
 
-                        return moment(endDate).diff(moment(startDate), 'weeks');
+                        return moment(endDate).diff(moment(startDate), 'weeks', true);
 
                     }
 
@@ -36,7 +37,7 @@ $(function() {
                         startDate = $('#startDate').val();
                         addDays = $('#addDays').val();
                         countryCode = $('#countryCode').val();
-                        endDate = calculateEndDate();
+                        endDate = calculateEndDate(addDays);
                         months = calculateMonths();
                         weeks = calculateWeeks();
 
@@ -55,7 +56,6 @@ $(function() {
 
                                 event.preventDefault();
                                 calculateInputData();
-
                                 APP.Modules.CalendarDisplay.renderCalendar(
                                     APP.Modules.UserInput.getUserInputResults()
                                 );
@@ -65,7 +65,6 @@ $(function() {
                         })(),
 
                         getUserInputResults: function() {
-
                             return {
                                 startDate: startDate,
                                 endDate: endDate,

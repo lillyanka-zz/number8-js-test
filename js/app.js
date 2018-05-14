@@ -18,12 +18,6 @@ $(function() {
            
             /**
              * @namespace
-             * @description Utilities and Methods for the App.
-             */
-            APP.Utils = {};
-           
-            /**
-             * @namespace
              * @description Holds the developer defined Modules to extend the App.
              */
             APP.Modules = {
@@ -36,6 +30,8 @@ $(function() {
              */
             APP.Main = (function() {
 
+                    var holidays;
+
                     /**
                      * @scope APP.Main
                      */
@@ -44,8 +40,24 @@ $(function() {
                         init: (function init(){
 
                             console.log('App has been initialized!');
+
+                            $.ajax({
+                                dataType: 'json',
+                                url: 'json/holidays.json',
+                                success: function (response) {
+
+                                    holidays = response;
+
+                                }
+                            });
                             
-                        })()
+                        })(),
+
+                        getHolidays: function (countryCode) {
+
+                            return holidays[countryCode];
+
+                        }
 
                     };
 

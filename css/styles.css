@@ -1,0 +1,19 @@
+.gray{
+    background-color: #aaa;
+}
+
+.green{
+    background-color: #83E79C;
+}
+
+.yellow{
+    background-color: #FFFC33;
+}
+
+.orange{
+    background-color: #db8432;
+}
+
+.pointer {
+    cursor: pointer;
+}
