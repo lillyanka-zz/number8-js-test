@@ -54,7 +54,13 @@
 
         </div>
 
-        <div class="container mt-4 d-none" id="calendarDisplay"></div>
+        <div class="container mt-4">
+
+            <div class="row d-none" id="calendarDisplay">
+
+            </div>
+
+        </div>
 
         </section>
         <!-- Frameworks and libraries -->
@@ -74,8 +80,66 @@
 
         <script id="calendarTemplate" type="text/x-jquery-tmpl">
         
-            <h1>${name}</h1>
+            <div class="col-sm-4">
+
+                <div class="card w-100">
+
+                    <div class="card-header text-center font-weight-bold">
+        
+                        ${name}
+        
+                    </div>
+
+                    <div class="card-body">
+
+                        <table class="table table-sm mb-0">
+                            
+                            <thead>
+
+                                <tr>
+
+                                    <th class="text-center">S</th>
+                                    <th class="text-center">M</th>
+                                    <th class="text-center">T</th>
+                                    <th class="text-center">W</th>
+                                    <th class="text-center">T</th>
+                                    <th class="text-center">F</th>
+                                    <th class="text-center">S</th>
+
+                                </tr>
+
+                            </thead>
+                            {{each(i, week) weeks}}
+            
+                                <tr>
+            
+                                    {{each(i, day) week}}
+            
+                                        {{if day === false}}
+
+                                            <td class="py-3 text-center bg-secondary">&nbsp;</td>
+
+                                        {{else}}
+
+                                            <td class="py-3 text-center">${day.dayNumber}</td>
+
+                                        {{/if}}
+            
+                                    {{/each}}
+            
+                                </tr>
+            
+                            {{/each}}
+            
+                        </table>
+                        
+                    </div>
+        
+                </div>
+
+            </div>
         
         </script>
+
     </body>
 </html>

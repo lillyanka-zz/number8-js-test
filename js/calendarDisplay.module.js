@@ -6,6 +6,29 @@ $(function() {
 
             APP.Modules.CalendarDisplay = (function() {
 
+                    var calendar = [];
+
+                    function getDaysInMonthArray(startDate, monthNumber) {
+
+                        var startYear = moment(startDate).format('YYYY');
+                        var daysInMonth = moment().month(monthNumber).daysInMonth();
+                        var arrDays = [];
+
+                        while (daysInMonth) {
+
+                            arrDays.push({
+                                dayPosition: parseInt(moment([startYear, monthNumber, daysInMonth]).format('d'), 0),
+                                dayNumber: parseInt(moment([startYear, monthNumber, daysInMonth]).format('D'), 0)
+                            });
+
+                            daysInMonth--;
+
+                        }
+
+                        return arrDays.reverse();
+
+                    }
+
                     /**
                      * @scope APP.Modules.CalendarDisplay
                      */
@@ -22,32 +45,44 @@ $(function() {
                             var startMonth = moment(userInputResults.startDate).startOf('month').month();
                             var endMonth = moment(userInputResults.endDate).startOf('month').month();
 
-                            var calendar = [];
+                            var startOfMonth = moment(userInputResults.startDate).startOf('month').day();
+                            var endOfMonth = moment(userInputResults.endDate).startOf('month').day()
 
                             for (var month = startMonth; month < endMonth; month++) {
 
                                 calendar.push({
                                     name: moment().month(month).format('MMMM'),
-                                    weeks: []
+                                    monthNumber: month
                                 });
 
-                                var startWeek = moment().month(month).startOf('month').week();
-                                var endWeek = moment().month(month).endOf('month').week();
+                            }
 
-                                for (var week = startWeek; week < endWeek; week++) {
+                            calendar.forEach(function(month, monthIndex) {
+
+                                var daysInMonth = getDaysInMonthArray(userInputResults.startDate, month.monthNumber); 
                                 
-                                    calendar[calendar.length - 1].weeks.push({
-                                        full: week,
-                                        days: Array(7)
-                                                .fill(0)
-                                                .map(function(dayNumber, index) {
-                                                    return moment().week(week).startOf('week').clone().add(dayNumber + index, 'day')
-                                                })
+                                calendar[monthIndex].weeks = Array(5);
+
+                                for (var i = 0; i < 5; i++) {
+
+                                    var week = Array(7).fill(false);
+
+                                    week.forEach(function(day, dayPosition) {
+    
+                                        if (daysInMonth.length && dayPosition === daysInMonth[0].dayPosition) {
+    
+                                            week[dayPosition] = daysInMonth[0];
+                                            daysInMonth.shift();
+    
+                                        }
+    
                                     });
-                                
+    
+                                    calendar[monthIndex].weeks[i] = week;
+
                                 }
 
-                            }
+                            });
 
                             console.log(calendar);
 
