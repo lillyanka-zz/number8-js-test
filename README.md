@@ -11,4 +11,4 @@ Fix styles so that all days are the same size (some cells may end up narrower th
 Trim out rows with no days in them
 
 
-# Time from start to finish: Approximately 8.5 hours
+# Time from start to finish: Approximately 10 hours
